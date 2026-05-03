@@ -1,12 +1,11 @@
-class Solution:    
+class Solution(object):
     def rotateString(self, s, goal):
-        #your code goes here
-        a=s+s
-        if len(s)!=len(goal):
+        if(len(goal)==len(s)):
+            a=s+s
+            if(goal in a):
+                return True
             return False
-        if(goal in a):
-          print("true") 
-          return True
         else:
-            return False     
-           
+            return False    
+
+        
